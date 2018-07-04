@@ -10,6 +10,7 @@ features:
 ### global.beibei.com
 #### Product
 Product is kept in table `products_beibei` which has following columns
+
 name | type | description |
 ---- | ---- | ---- |
 id |  int | |
@@ -19,6 +20,7 @@ category | string | |
 
 #### SKU 
 SKU are kept in table `skus_beibei` 
+
 name | type | description |
 ---- | ---- | ---- |
 id |  int | |
@@ -31,6 +33,7 @@ img_sku_attr_code | string | The SKU attribute value code which can decide the i
 
 #### SKU Images
 SKU Images are kept in table `sku_images_beibei`
+
 name | type | description |
 ---- | ---- | ---- |
 product_id | int | |
