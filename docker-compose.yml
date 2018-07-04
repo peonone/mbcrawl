@@ -1,0 +1,20 @@
+version: "3"
+services:
+
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: mbcrawl
+      POSTGRES_DB: mbcrawl
+    ports:
+      - "5432"
+    volumes: 
+      - ./database/tables.sql:/docker-entrypoint-initdb.d/02-tables.sql
+  
+  crawler:
+    build: .
+    command: scrapy crawl beibei
+    ports:
+      - "6023:6023"
+    links:
+      - db
