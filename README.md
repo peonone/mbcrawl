@@ -1,4 +1,7 @@
 A mother&baby E-commerce crawler powered by scrapy.
+
+[![Build Status](https://travis-ci.org/peonone/mbcrawl.svg?branch=master)](https://travis-ci.org/peonone/mbcrawl)
+
 features:
  - crawl mother&baby products from global.beibei.com (And may add support for some other sites)
  - store the product meta info(such as id, name, description, skus) to PostgreSQL
